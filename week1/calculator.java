@@ -30,8 +30,9 @@ else if(choice==4)
  { 
 System.out.print("\nThe quotient of the values "+a+" and "+b+" is "+(a/b));
  } 
-Else
- { System.out.print("Enter valid choice!!\nPlease try again!!\n"); 
+else
+ {
+  System.out.print("Enter valid choice!!\nPlease try again!!\n"); 
  }
  }
  }
