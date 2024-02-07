@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
 {
-printf("size of int : %d\n",sizeof(int));
+printf("size of int : %ld\n",sizeof(int));
 return 0;
 }
