@@ -1,4 +1,5 @@
 #include<iostream>
+#define pi 3.14
 using namespace std;
 void Area(float radius)
 {
