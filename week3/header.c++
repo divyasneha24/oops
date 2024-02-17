@@ -4,6 +4,14 @@
 using namespace std;
 int main()
 {
-    boxVolume(2,2.1,2.2);
-    boxArea(2.9,4,5.6);
+    float length,height,width;
+    cout<<"enter length : "<<endl;
+    cin>>length;
+    cout<<"enter height : "<<endl;
+    cin>>height;
+    cout<<"enter width : "<<endl;
+    cin>>width;
+    boxArea(length,height,width);
+    boxVolume(length,height,width);
+
 }
