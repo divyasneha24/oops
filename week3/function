@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+//inline function
+inline void displayWelcomeMessage(){
+    cout<<"WELCOME"<<endl;
+}
+class Box{
+    public:
+        float length,width,height;
+    //member function
+    void boxArea(){
+        cout<<"Box area :"<<2*(length*width+width*height+height*length)<<endl;
+    }
+    //non member function
+    void boxVolume();
+
+     //friend function
+    friend void displayBoxDimensions(Box);
+
+};
+void Box :: boxVolume(){
+    cout<<"Box Volume :"<<length*width*height<<endl;
+}
+void displayBoxDimensions(Box cuboid){
+    cout<<"length :"<<length<<endl;
+    cout<<"width :"<<width<<endl;
+    cout<<"height :"<<height<<endl;
+}
+
+int main(){
+    float length,width,height;
+    Box;
+    cout<<"Enter length :"<<ends;
+    cin>>length;
+    cout<<"Enter width :"<<ends;
+    cin>>width;
+    cout<<"Enter height :"<<ends;
+    cin>>height;
+    boxArea();
+    boxVolume();
+    displayWelcomeMessage();
+    displayBoxDimensions();
+
+}
