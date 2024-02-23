@@ -26,7 +26,7 @@ public class Student{
     }
 
 public static void main(String[] args){
-    Student s = new Student("Bhagyalaxmi ",505,9.32,"MAHARAJ VIJAYARAM COLLEGE OF ENGINEERING",33);
+    Student s = new Student("Divya Sneha",564,8.09,"MAHARAJ VIJAYARAM COLLEGE OF ENGINEERING",33);
     s.displayPrivate();
 }
 }
