@@ -1,23 +1,38 @@
-public class Simpleinheritance {
+class Student {
 private
-int pri=10;
-public
-int pub=11;
+double semper = 8.09;
+void stdsem(){
+System.out.println("My percentage is "+semper+" (private).");
+}
 protected
-int pro=12;
+int num = 64;
+void stdnum(){
+System.out.println("My num is "+num+"(protected)");
+}
 public
-int getpri(){
-return pri;
+String name = "Divya";
+void studname(){
+System.out.println("My name is "+name+" (public).");
+}
+double getPVT()
+{
+System.out.println("My percentage is "+semper+" (private).");
+return semper;
 }
 }
-class subclass extends Simpleinheritance{
-int var1=getpri();
+class details extends Student {
+public
+int getProt() {
+System.out.println("My num is "+num+" (protected).");
+return num;
 }
-class test{
-public static void main(String[] args) {
-subclass x = new subclass();
-System.out.println(x.pub);
-System.out.println(x.pro);
-System.out.println(x.var1);
+}
+public class ppp {
+public static void main(String args[])
+{
+details object = new details();
+object.studname();
+object.getProt();
+object.stdsem();
 }
 }
