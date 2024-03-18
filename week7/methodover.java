@@ -1,14 +1,21 @@
-class addition{
-    static int add(int a, int b){
-        return a+b;
-    }
-    static int add(int a,int b,int c){
-        return a+b+c;
-    }
+class Addition {
+void add(int a,int b)
+{
+System.out.println(a+b);
 }
-class methodover{
-public static void main (String[] args){
-    System.out.println(addition.add(2,4));
-    System.out.println(addition.add(5,6,7));
+}
+class Sum extends Addition{
+void add(int a,int b,int c)
+{
+System.out.println(a+b+c);
+}
+}
+public class MethodOlInheri
+{
+public static void main(String[] args)
+{
+Sum obj = new Sum();
+obj.add(2,4);
+obj.add(3,6,9);
 }
 }
